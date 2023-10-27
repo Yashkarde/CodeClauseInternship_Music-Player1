@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Music Player Update  Version </title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	<!-- Popper JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css">
+	<link rel="stylesheet" href="style.css">
+		</head>
+		<body>
+			<main>
+			<marquee behavior="" direction=""><h5 class="text-danger m-0 p-0"> Yash Music Player</h5></marquee>
+				<div class="music_container">
+					<h3 id="title">03-Zaroorat(bossmobi)</h3>
+					<h4 id="artist">Yash Karde</h4>
+
+				
+				<div class="img_container">
+					<img src="images/img1.jpg" alt="" class="">
+					
+					<div class="slider_container"> 
+						<i class="fa fa-volume-down" onclick="muteVol()"></i> 
+						<input type="range" min="0" max="100"
+						value="30" id="volume_slider" onchange="setVolume()"> 
+						<i class="fa fa-volume-up" onclick="fullVol()"></i> 
+					</div> 
+				</div>
+				<audio src="music/03_-_Zaroorat(bossmobi).mp3"></audio>
+			
+				<!-- progress bar html code -->
+			
+				<div class="progressbar_container" id="progress_container">
+					<div class="progress_duration_meter">
+						<div id="current_time">00:00</div>
+						<div id="duration">02:00</div>
+					</div>
+					<div class="progress_div " id="progress_div">
+						<div class="progress" id="progress"></div>
+					</div>
+				</div>
+			
+				<div class="music_controls">
+					<i class="fas fa-backward" aria-hidden="true" id="prev" title="previous "></i>
+					<i class="fas fa-play main_btn" aria-hidden="true" id="play_pause" title="play or pause"></i>
+
+					<i class="fas fa-forward" aria-hidden="true" id="next" title="next"></i>
+
+				</div>
+				</div>
+			</main>
+			<script src="script.js"></script>
+		</body>
+		</html> 
